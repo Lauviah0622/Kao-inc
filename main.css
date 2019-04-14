@@ -1,0 +1,412 @@
+@font-face {
+    font-family: "akzi";
+    src: url(image/AkzidenzGrotesk-ExtraBoldCond.otf)
+}
+
+
+
+body,p,h1,h2,ul,img{
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: block;
+}
+.full{
+    width: 100%;
+    
+}
+.fixed{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.main-color{
+    background-color: black;
+}
+h1{
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 900 ;    
+    font-size: 42pt;
+    line-height: 58pt;
+    color: #ffffff;
+}
+h2{
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 700 ;    
+    font-size: 20pt;
+    line-height: 53px;
+    color: #ffffff;
+}
+#top-btn{
+    font-family: 'Noto Serif TC', serif;;
+    font-weight: 700 ;    
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #000000;
+    opacity: 0.5;
+  color: white;
+  padding: 15px;
+    transition: opacity .3s;
+}
+#top-btn:hover{
+    opacity: 1;
+}
+
+
+/*NAV的CSS*/
+
+.nav{
+    height: 110px;   
+}
+.logo{
+    background-image: url(image/nav_logo.png);
+    background-position: center;
+    border-image-repeat: no-repeat;
+    height: 65px;
+    width: 173px;
+    float: left;
+    
+/*    LOGO要靠左，所以用float LEFT */
+    
+    margin-top: 22px;
+}
+#nav ul{
+    float:right;
+    padding-top: 40px;
+}
+
+/*整個UL要靠，所以float RIGHT*/
+
+#nav li{
+    list-style-type: none;
+    float: left;
+    height: 25ㄣx;
+}
+
+/*原本li預設會是上下排列，為了上它變成左右排列，所以讓他float LEFT*/
+#nav a{
+    text-decoration: none;
+    padding-left: 35px;
+    display: block;
+    font-family: akzi;
+    text-align: center;
+    line-height: 26px;
+    font-size: 21pt;
+    color: #ffffff;
+}
+#nav a:hover{
+    text-decoration: none;
+    padding-left: 35px;
+    display: block;
+    font-family: akzi;
+    text-align: center;
+    line-height: 26px;
+    font-size: 21pt;
+}
+
+/*NAV的CSS結束*/
+
+#cover{
+    position: absolute;
+    top: 110px;
+    background-image: url(image/cover_01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 1300px;
+    z-index: 10;
+    
+    
+}
+    
+.rec-out{
+    padding-top: 300px
+}
+.rec{
+    background-image: url(image/cover_logo.png);
+    height: 357px;
+    width: 713px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#about{
+    position: absolute;
+    top:1410px;
+    background-image: url(image/about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1640px;
+    margin-top: -23px;
+    z-index: 9;
+}
+.about-out{
+    margin-top: 1150px;
+}
+.about-h2{
+    text-align: center;
+}
+
+#art-1{
+    position: absolute;
+    background-image: url(image/artist_01_cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 1350px;
+    z-index: 8;
+    top: 2940px;
+}
+.art-h1{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px
+}
+.art-h2{
+    margin-top: 70px;
+    padding-left: 20px;
+    
+}
+.art-1{
+    position: absolute;
+    top: 230px;
+    left: 80px;
+}
+.art-1-h1{
+    background-image: url(image/artist_01_bg.png)
+}
+#art-2{
+    position: absolute;
+    background-image: url(image/artist_02_cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    width: 100%;
+    height: 1450px;
+    z-index:7;
+    top: 4330px;
+    margin-top: -100px;
+    
+}
+.art-2{
+    position: absolute;
+    top: 230px;
+    right: 80px;
+}
+.art-2-h1{
+    background-image: url(image/artist_02_bg.png)
+}
+#art-3{
+    position: absolute;
+    background-image: url(image/artist_03_cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 1450px;
+    z-index:6;
+    top: 5730px;
+    margin-top: -190px;
+    
+}
+.art-3{
+    position: absolute;
+    top: 230px;
+    left: 80px;
+}
+.art-3-h1{
+    background-image: url(image/artist_03_bg.png)
+}
+#art-4{
+    position: absolute;
+    background-image: url(image/artist_04_cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    width: 100%;
+    height: 1350px;
+    z-index:5;
+    top: 6815px;
+}
+.art-4{
+    position: absolute;
+    top: 230px;
+    right: 80px;
+}
+.art-4-h1{
+    background-image: url(image/artist_04_bg.png)
+}
+#art-5{
+    position: absolute;
+    background-image: url(image/artist_05_cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 1435px;
+    z-index:4;
+    top: 8130px;
+}
+.art-5{
+    position: absolute;
+    top: 230px;
+    left: 80px;
+}
+.art-5-h1{
+    background-image: url(image/artist_05_bg.png)
+}
+#art-6{
+    position: absolute;
+    background-image: url(image/artist_06_cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1650px;
+    z-index:3;
+    top: 9500px;
+    margin-top: -120px;
+    
+}
+.art-6-1{
+    float: left;
+    margin-top: 230px;
+    margin-left: 80px;
+}
+.art-6-2{
+    position: absolute;
+    top:220px;
+    right: 20px;
+    
+    
+}
+.art-6-h1{
+    background-image: url(image/artist_06_bg.png)
+}
+#album{
+    position: absolute;
+    top: 11030px;
+    width: 100%;
+}
+.alb-out{
+    
+}
+.alb{
+    margin-top:  50px;
+    width: 89vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    
+}
+.pic{
+    position: relative;
+    float: left;
+    right: 0;
+    width: 21vw ;
+    height: 21vw ;
+    padding: 0.5vw;
+    
+}
+.pic img{
+    float: left;
+    width: 21vw ;
+    height: 21vw ;
+}
+.hover{
+    width: 21vw ;
+    height: 21vw ;
+    opacity: 0;
+    color: white;
+    background-color: black;
+    transition: opacity .3s 
+}
+.hover:hover{
+    width: 21vw ;
+    height: 21vw ;
+    opacity: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+.alb-id{
+    position: absolute;
+    top: 10vw;
+    width: 21vw ;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    
+}
+#contact{
+    position: absolute;
+    top: 12750px;
+    background-color: #000000;
+    width: 100%;
+    height: 800px;
+    
+}
+.contact-out{
+    padding-top: 100px;
+}
+.contact{
+    padding-left:200px;
+}
+.info{
+    float: right;
+    margin-top: 40px;
+    margin-right: 400px;
+    line-height: 50pt    
+    
+}
+.info p{
+    font-size: 15pt;
+}
+.info hr{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0;
+    width: 110%;
+    background-color: #ffffff;
+    height: 2px;
+}
+.info img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#footer{
+    position: absolute;
+    top:13550px;
+    background-color: #4d4d4d;
+    width: 100%;
+    height:60px;
+}
+.footer-out{
+    margin-top: 15px
+}
+.footer{
+    
+}
+.copyright{
+    padding-left: -20px;
+    color: #FFFFFF;
+    font-family: 'Noto Serif TC', serif;;
+    font-weight: 700 ;    
+
+}
